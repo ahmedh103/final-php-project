@@ -4,6 +4,7 @@ include "../shared/header.php";
 include "../shared/nav.php";
 include "../general/conn.php";
 include "../general/function.php";
+
 if(isset($_POST['send'])){
 
 $name = $_POST['name'];
@@ -68,9 +69,9 @@ header("location:/yarab/doctors/listde.php");
                 <div class="form-group text-center">
                         <label for="">
 
-                        Date 
+                        Date and Time
                     </label>
-                    <input value="<?php  echo $date ?>" type="datetime-local" name="date" class="form-control text-center">
+                    <input value="<?php  echo $date ?>" type="text" name="date" class="form-control text-center">
                 </div>
                 <div class="form-group  text-center">
                         <label for="">
@@ -94,8 +95,10 @@ header("location:/yarab/doctors/listde.php");
                     <?php else : ?>
                 <button class="btn btn-info "  name="send"> Send Data  </button>
                 <?php endif; ?>
+                <?php if($_SESSION['admin'] == 'zein'):?>
                 <hr>
                 <a class="btn btn-info"  href="listde.php">List</a>
+                <?php endif; ?>
                 </form>
             </div>
             </div>

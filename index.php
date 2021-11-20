@@ -61,8 +61,8 @@ include "./shared/nav.php";
 						<div class="row align-items-center about-main-info">
 							<div class="col-lg-6 col-md-6 col-sm-12 text-center">
 								<h2> Welcome to Health Lab </h2>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
-								<p>Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+								<p class="text-center">Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
+								<p class="text-center">Fusce convallis ante id purus sagittis malesuada. Sed erat ipsum, suscipit sit amet auctor quis, vehicula ut leo. Maecenas felis nulla, tincidunt ac blandit a, consectetur quis elit. Nulla ut magna eu purus cursus sagittis. Praesent fermentum tincidunt varius. Proin sit amet tempus magna. Fusce pellentesque vulputate urna. </p>
 								<a href="#" class="new-btn-d br-2">Read More</a>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
@@ -304,8 +304,178 @@ include "./shared/nav.php";
 		</div>
 	</div>
 	<!-- End Gallery -->
-	
+<!-- Start Team -->
+<div id="team" class=" text-center  team-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box ">
+						<h2>Our Doctor</h2>
+						<p class="text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-1.jpg" alt="">
+                        </div>
+                        <div class="team-content text-center">
+                            <h3 class="title text-center">Omar</h3>
+                            <span class="post">web developer</span>
+                            <ul class="social text-center">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li class="text-center"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-2.jpg" alt="">
+                        </div>
+                        <div class="team-content text-center">
+                            <h3 class="title"> Davise</h3>
+                            <span class="post">Orthopaedic Surgery</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="text-center" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="images/img-3.jpg" alt="">
+                        </div>
+                        <div class="team-content text-center">
+                            <h3 class="title">Kesrtien</h3>
+                            <span class="post">Dentist</span>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="text-center" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+		</div>
+	</div>
+	
+	<!-- End Team -->
+
+
+	<!-- Start Blog -->
+	<div id="blog" class="blog-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Blog</h2>
+						<p class ="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="images/blog-img-01.jpg" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="images/blog-img-02.jpg" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Proin vel sem ut lorem rhoncus lacinia. </h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog-inner">
+						<div class="blog-img">
+							<img class="img-fluid" src="images/blog-img-03.jpg" alt="" />
+						</div>
+						<div class="item-meta">
+							<a href="#"><i class="fa fa-comments-o"></i> 5 Comment </a>
+							<a href="#"><i class="fa fa-user-o"></i> Admin</a>
+							<span class="dti">25 July 2018</span>
+						</div>
+						<h2>Aliquam egestas magna a malesuada rutrum. </h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+						<a class="new-btn-d br-2" href="#">Read More <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Blog -->
+	<!-- Start Subscribe -->
+	<div class="subscribe-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="subscribe-inner text-center clearfix">
+						<h2 >Subscribe</h2>
+						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<form action="#" method="post">
+							<div class="text-center  form-group">
+								<input class="form-control-1"  id="email-1" name="email" placeholder="Email Address" required="" type="text">
+							</div>
+							<div class="form-group text-center">
+								<button type="submit" class="new-btn-d  br-2">
+									Subscribe
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Subscribe -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 ">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Health Lab</a> Design By : <a href="https://html.design/">Ahmed Hassan</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<a href="#" id="scroll-to-top" class="new-btn-d br-2"><i class="fa fa-angle-up"></i></a>
 
 
 <?php

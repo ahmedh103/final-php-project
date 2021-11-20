@@ -14,35 +14,39 @@ testMassege($d ,"delete");
 header("location:/yarab/patients/listdp.php");
 }
 
-
 ?>
 	
-    <h1  class="display-5  text-center  "> Add Doctor page</h2>
+    <h1  class="display-5  text-center  "> Add Patient page</h2>
    
 	<div class="container col-md-6  text-center">
        
-        <div class="card">
-            <div class="card-body">
-               <table class="table table-light  zigzag">
-                   <tr>
+      
+          
+               <table class="table table-light  qsqs  zigzag">
+                   <tr  >
                        <th>ID</th>
                        <th>Name</th>
                        <th>statu</th>
+                       <th>Image</th>
                        <th>Doctor Id</th>
-                      
+                       <th>Room Id</th>
                        <th>Action</th>
               
                    </tr>
-                   <tr>
+                   <tr >
                        <?php foreach($s as $data){
 
                         ?>
                        <th><?php echo $data['id'];?></th>
-                       <th><?php echo $data['name'];?></th>
+                       <th ><?php echo $data['name'];?></th>
                        <th><?php echo $data['statu'];?></th>
-                       <th><?php  echo $data['doctorId']  ?></th>
+                       <th><img class="w-100" src="./upload/<?php echo $data['img'];?>" alt=""></th>
+                       <th><?php  echo $data['doctorId'];  ?></th>
+                       <th ><?php  echo $data['roomId'];  ?></th>
+                       
                        <th><a  onclick ="return confirm('are you sure !!')" href="/yarab/patients/listdP.php?delete=<?php echo $data['id']; ?>"  class="btn btn-danger">Delete  </a></th>
                        <th><a   href="/yarab/patients/add.php?edit=<?php echo $data['id']; ?>"  class="btn btn-info">Edit </a></th>
+                       
                    </tr>
 
                    <?php } ?>

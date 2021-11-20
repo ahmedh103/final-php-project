@@ -112,7 +112,7 @@ color: rgb(59, 66, 136);
       }
       .container  .row    .scanqrcode img{
 
-width: 100%;
+width: 90%;
 
 
       }
@@ -138,10 +138,20 @@ width: 100%;
               font-size:xx-small ;
 
             }
+
       .container  .card   table th .btn {
 font-size:10px;
 
       }
+            .container    .qsqs  {
+
+                width: 50%;
+            }
+     
+      .container     table th .btn {
+        font-size:xx-small;
+        
+              }
       .roomddd{
 
         background-image: url(../images/www.jpg);

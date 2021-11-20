@@ -30,8 +30,9 @@ header("location:/yarab/doctors/listde.php");
                        <th>Name</th>
                        <th>Department</th>
                        <th>Date</th>
-
+                
                        <th>Action</th>
+                       
               
                    </tr>
                    <tr>

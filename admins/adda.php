@@ -5,7 +5,7 @@ include "../shared/nav.php";
 include "../general/conn.php";
 include "../general/function.php";
 
-if($_SESSION['admin']=='zein'){
+if($_SESSION['admin']== 'zein'){
 
 if(isset($_POST['send'])){
 
@@ -44,6 +44,7 @@ $insert = "INSERT  INTO  `admin` VALUES (null,'$name','$password' )";
                     </label>
                     <input  type="text" name="name" class="form-control text-center">
                 </div>
+                
                 <div class="form-group text-center">
                         <label for="">
 
@@ -51,6 +52,7 @@ $insert = "INSERT  INTO  `admin` VALUES (null,'$name','$password' )";
                     </label>
                     <input  type="text" name="password" class="form-control text-center">
                 </div>
+               
                 <button name="send"  class="btn btn-info">Send admin </button>
                     </form>
 

@@ -13,8 +13,10 @@ $password = $_POST['password'];
 $select ="SELECT * FROM  admin WHERE name ='$name' and password ='$password' ";
 $s = mysqli_query($conn,$select);
 $numRow =mysqli_num_rows($s);
+$row = mysqli_fetch_assoc($s);
 if($numRow>0){
 $_SESSION['admin']= "$name";
+$_SESSION['role']= $row['role'];
     header('location:/yarab/index.php');
 }else{
 
@@ -22,7 +24,7 @@ $_SESSION['admin']= "$name";
 }
  
 }
- print_r($_SESSION);
+
 
 
 ?>

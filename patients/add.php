@@ -3,18 +3,28 @@
 include "../shared/header.php";
 include "../shared/nav.php";
 include "../general/conn.php";
-//include "../general/function.php";
+include "../general/function.php";
 if(isset($_POST['send'])){
 
 $name = $_POST['name'];
 $statu = $_POST['statu'];
 $roomId = $_POST['roomId'];
-$doctorId = $_POST['doctorId'];
-$insert = "INSERT  INTO  patients VALUES (null,'$name' ,'$statu',$roomId,$doctorId )";
-  $i =   mysqli_query($conn,$insert);
-  testMassege($i, "insert");
+$image_type = $_FILES['image']['type'];
+$image_name =$_FILES['image']['name'];
+$image_tmp=$_FILES['image']['tmp_name'];
+$location = './upload/';
+if(move_uploaded_file($image_tmp ,$location.$image_name)){
+echo "image true";
 
-  header("location:/yarab/patients/listdp.php");
+}else {
+
+    echo "image false";  
+}
+$doctorId = $_POST['doctorId'];
+$insert  =  "INSERT  INTO  patients VALUES (null,'$name','$statu','$image_name',$roomId, $doctorId )";
+  $i =   mysqli_query($conn,$insert);
+  testMassege($i,"insert");
+ // header("location:/yarab/patients/listdp.php");
 }
 $name ="";
 $statu ="";
@@ -57,7 +67,7 @@ header("location:/yarab/patients/listdp.php");
             <div class="col-md-6 mt-5">
         <div class="card">
             <div class="card-body">
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     <div class="form-group ">
                         <label for="">
 
@@ -71,6 +81,13 @@ header("location:/yarab/patients/listdp.php");
                         Patient status
                     </label>
                     <input value="<?php  echo $statu ?>" type="text" name="statu" class="form-control text-center">
+                </div>
+                <div class="form-group text-center">
+                        <label for="">
+
+                         Image 
+                    </label>
+                    <input  type="file" name="image" class="form-control text-center">
                 </div>
                 <div class="form-group  text-center">
                         <label for="">
@@ -92,7 +109,7 @@ header("location:/yarab/patients/listdp.php");
                 <div class="form-group  text-center">
                         <label for="">
 
-                      Doctors Name
+                      Doctors Name-Date
                     </label>
                    <?php $select="SELECT * FROM  doctors";
                    $s =mysqli_query($conn,$select);
@@ -109,16 +126,19 @@ header("location:/yarab/patients/listdp.php");
                 <?php if($update): ?>
                     <button  class="btn btn-primary"  name="update"> Update</button>
                     <?php else : ?>
-                <button class="btn btn-info "  name="send"> Send Data  </button>
+                <button class="btn btn-info "  name="send"> Book  </button>
                 <?php endif; ?>
+                <?php if(isset($_SESSION['admin'])):?>
                 <hr>
+               
                 <a class="btn btn-info"  href="listdp.php">List</a>
+                <?php endif; ?>
                 </form>
             </div>
             </div>
         </div>
 
-        <div class="col-md-6 scanqrcode">
+        <div class="col-md-6 scanqrcode ">
 
     <img src="../images/frame.png" alt="chan"></img>
     

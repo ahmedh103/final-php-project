@@ -11,7 +11,7 @@ $insert = "INSERT  INTO   rooms VALUES (null,'$name')";
   $i =   mysqli_query($conn,$insert);
   testMassege($i, "insert");
 
-  header("location:");
+
 }
  
 

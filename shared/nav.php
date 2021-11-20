@@ -20,7 +20,7 @@ if(isset($_GET['logout'])){
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="left-top">
-						<a class="new-btn-d br-2" href="#"><span>Book Appointment</span></a>
+						<a class="new-btn-d br-2" href="/yarab/patients/add.php"><span>Book Appointment</span></a>
 						<div class="mail-b  text-center"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> demo@gmail.com</a></div>
 					</div>
 				</div>
@@ -58,15 +58,14 @@ if(isset($_GET['logout'])){
                         <li><a class="nav-link text-left" href="/yarab/patients/add.php">Make Appointment</a></li>
 						<?php if(isset($_SESSION['admin'])):?>
                         <li><a class="nav-link text-left" href="/yarab/doctors/add.php">Doctors</a></li>
-						<li><a class="nav-link text-left" href="#appointment">Managers</a></li>
                         <li><a class="nav-link text-left" href="/yarab/department/add.php">Department</a></li>
                         <li><a class="nav-link text-left" href="/yarab/rooms/add.php">Rooms</a></li>
 						<li><a class="nav-link text-left" href="/yarab/admins/adda.php">admins</a></li>
 						<form class="form-inline my-2 my-lg-0"  action="">
-						<li><button name="logout" class="text-left  ml-5 btn btn-info"  >Logout</button></li>
+						<li class="text-left"><button name="logout" class="text-left  ml-5 btn btn-info"  >Logout</button></li>
 						</form>
 						<?php else :?>
-						<li><a class="text-left  ml-5 btn btn-info" href="/yarab/admins/login.php">Login</a></li>
+						<li class="text-left ml-2"><a class="text-left  ml-5 btn btn-info" href="/yarab/admins/login.php">Login</a></li>
 						<?php endif;?>
 					                 </ul>
 								</div>
